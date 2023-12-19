@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root command = "/start" lvl = "1" item = "1">
+    Options
+    <Option command = "/userinfo" lvl = "2" item = "1">UserInfo
+        <Option command = "" lvl = "3" item = "1">FullName</Option>  
+        <Option command = "" lvl = "3" item = "2">UID</Option>
+        <Option command = "" lvl = "3" item = "3">Login</Option>
+        <Option command = "/help" lvl = "3" item = "99">Help</Option>  
+        <Option command = "/goup" lvl = "3" item = "100">GoUp</Option>
+    </Option>
+    <Option command = "/feedback" lvl = "2" item = "98">FeedBack</Option>  
+    <Option command = "/help" lvl = "2" item = "99">Help</Option>  
+</root>
