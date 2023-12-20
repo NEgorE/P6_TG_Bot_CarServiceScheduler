@@ -41,3 +41,20 @@ def sb_session_open():
     global session
     session = Session(bind=DB_engine)
     print('Session is open!!!')
+
+def new_user(msg_from_user_id, msg_from_user_username, msg_from_user_last_name, msg_from_user_first_name, msg_from_user_language_code):
+    user = User(
+        tg_id = msg_from_user_id,
+        created_dt = datetime.datetime.now(),
+        username = replace_none(msg_from_user_username, str(msg_from_user_id)),
+        last_name = replace_none(msg_from_user_last_name, str(msg_from_user_id)),
+        first_name = replace_none(msg_from_user_first_name, str(msg_from_user_id)),
+        language_code = replace_none(msg_from_user_language_code, str(msg_from_user_id))
+    )
+    return user
+
+def replace_none(in_str, new_str):
+        if in_str == None :
+            return new_str
+        else :
+            return in_str
