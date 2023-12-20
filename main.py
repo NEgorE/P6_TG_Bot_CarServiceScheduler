@@ -2,8 +2,10 @@ import telebot
 import datetime
 import xml.etree.ElementTree as ET
 
+
 from token_value import token
 from src import def_lib as dl
+from src.db import db_sqla as dbc
 
 bot = telebot.TeleBot(token)
 
@@ -11,6 +13,8 @@ date_format = '%Y-%m-%d'
 lang = 'en'
 
 def main():
+
+    dbc.db_init()
 
     @bot.message_handler(commands=["start"])
     def start(msg) :

@@ -3,3 +3,5 @@ _test/*
 token_value.py
 
 *__pycache__*
+
+*.db
