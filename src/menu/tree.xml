@@ -1,18 +1,21 @@
-<root command = "/start" item = "1" par_item = "0">Menu
+<root command = "/menu" item = "1" par_item = "0">Menu
     <Option command = "/userinfo"   item = "2" par_item = "1">UserInfo
         <!--Output user info-->
         <Option command = "/edituserinfo"   item = "3" par_item = "2">Edit</Option>
         <Option command = "/help"           item = "4" par_item = "2">Help</Option>  
-        <Option command = "/goup"           item = "5" par_item = "2">GoUp</Option>
+        <Option command = "/menu"           item = "5" par_item = "2">Menu</Option>
     </Option>
     <Option command = "/mygarage"   item = "6" par_item = "1">MyGarage
         <!--Output list of cars-->
-        <Option command = "/showcarinfo"    item = "7" par_item = "6">ShowCarInfo</Option>
+        <Option command = "/showcarinfo"    item = "7" par_item = "6">ShowCarInfo : CarName
+            <Option command = "/editcarinfo"    item = "9:" par_item = "7">EditCarInfo : CarName</Option>
+            <Option command = "/copythiscar"    item = "14:" par_item = "7">CopyThisCar : CarName</Option>
+            <Option command = "/delcar"         item = "10:" par_item = "7">DeleteCar : CarName</Option> 
+            <Option command = "/mygarage"       item = "13" par_item = "7">MyGarage</Option>
+        </Option>
         <Option command = "/addnewcar"      item = "8" par_item = "6">AddNewCar</Option>
-        <Option command = "/editcarinfo"    item = "9" par_item = "6">EditCarInfo</Option>
-        <Option command = "/delcar"         item = "10" par_item = "6">DeleteCar</Option>
         <Option command = "/help"           item = "11" par_item = "6">Help</Option>  
-        <Option command = "/goup"           item = "12" par_item = "6">GoUp</Option>
+        <Option command = "/menu"           item = "12" par_item = "6">Menu</Option>
     </Option>
     <Option command = "/feedback"   item = "98" par_item = "1">FeedBack</Option>  
     <Option command = "/help"       item = "99" par_item = "1">Help</Option>  
