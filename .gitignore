@@ -2,3 +2,4 @@ _test/*
 .vscode/*
 token_value.py
 
+*__pycache__*
