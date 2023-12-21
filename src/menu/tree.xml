@@ -18,5 +18,7 @@
         <Option command = "/menu"           item = "12" par_item = "6">Menu</Option>
     </Option>
     <Option command = "/feedback"   item = "98" par_item = "1">FeedBack</Option>  
-    <Option command = "/help"       item = "99" par_item = "1">Help</Option>  
+    <Option command = "/help"       item = "99" par_item = "1">Help</Option>
+
+    <Option command = "/adminpanel"       item = "10001" par_item = "1">AdminPanel</Option>
 </root>

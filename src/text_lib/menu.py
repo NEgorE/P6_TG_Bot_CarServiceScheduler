@@ -15,7 +15,9 @@ menu_text = {
         '11' : 'Help',
         '12' : 'Menu',
         '98' : 'FeedBack',
-        '99' : 'Help'
+        '99' : 'Help',
+
+        '10001' : 'AdminPanel'
     },
     'ru' : {
 
